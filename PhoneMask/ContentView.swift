@@ -15,7 +15,9 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            
             TextField("+7 (000) 000 00 00", value: $myText, formatter: PhoneFormatter())
+            
         }
         .padding()
     }
