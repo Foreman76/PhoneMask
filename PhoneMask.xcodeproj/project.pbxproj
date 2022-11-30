@@ -55,9 +55,9 @@
 			children = (
 				84742916293755BB00AF2D13 /* PhoneMaskApp.swift */,
 				84742918293755BB00AF2D13 /* ContentView.swift */,
+				847429242937734600AF2D13 /* PhoneFormatter.swift */,
 				8474291A293755BD00AF2D13 /* Assets.xcassets */,
 				8474291C293755BD00AF2D13 /* Preview Content */,
-				847429242937734600AF2D13 /* PhoneFormatter.swift */,
 			);
 			path = PhoneMask;
 			sourceTree = "<group>";
