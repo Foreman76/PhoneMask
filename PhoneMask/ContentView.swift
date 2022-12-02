@@ -54,7 +54,7 @@ struct ContentView: View {
                 .keyboardType(.numberPad)
                 .onChange(of: myText) { newValue in
                     myText = formater.format(phone: newValue)
-                  
+                   // you can choose combine in place of event onChanged
                 }
             
         }
