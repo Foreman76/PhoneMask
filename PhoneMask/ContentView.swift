@@ -34,6 +34,7 @@ class MyFormatter {
 }
 
 
+//MARK:              it has bug backspace last simbol
 struct ContentView: View {
     
     @State private var myText:String = ""
@@ -48,7 +49,9 @@ struct ContentView: View {
                 .keyboardType(.numberPad)
                 .onChange(of: myText) { newValue in
                     myText = formater.format(phone: newValue)
-                   // you can choose combine in place of event onChanged
+
+//  MARK:    you can choose combine in place of event onChanged
+
                 }
             
         }
