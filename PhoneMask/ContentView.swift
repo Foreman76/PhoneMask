@@ -25,8 +25,6 @@ class MyFormatter {
             if (numbers.count >= 8) { result += " " + numbers.customSubString(from: 7, to: numbers.count > 9 ? 9 : numbers.count) }
             if (numbers.count >= 10) { result += " " + numbers.customSubString(from: 9, to: numbers.count > 11 ? 11 : numbers.count) }
             
-            print(result)
-            
         }else{
 //             add phone mask your country here
         }
@@ -39,16 +37,12 @@ class MyFormatter {
 struct ContentView: View {
     
     @State private var myText:String = ""
-    @State private  var old = ""
+
     private var formater = MyFormatter()
-    @State var showDetail = false
+
     var body: some View {
         
         VStack {
-            
-            Button("detail", action: {
-                showDetail.toggle()
-            })
             
             TextField("+7 (000) 000 00 00", text: $myText)
                 .keyboardType(.numberPad)
@@ -59,9 +53,7 @@ struct ContentView: View {
             
         }
         .padding()
-        .sheet(isPresented: $showDetail) {
-            Detail()
-        }
+        
     }
     
 }
